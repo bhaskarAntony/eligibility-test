@@ -68,7 +68,7 @@ const Index = () => {
               <a href="#timeline" className="text-gray-700 hover:text-primary transition-colors">Test Details</a>
               <a href="#outcomes" className="text-gray-700 hover:text-primary transition-colors">Outcomes</a>
               <a href="#faqs" className="text-gray-700 hover:text-primary transition-colors">FAQs</a>
-              <Button className="mt-4 bg-primary text-white w-full">Register Now</Button>
+              <a href="#home" className="mt-4 bg-primary text-white w-full">Register Now</a>
             </nav>
             <div className="flex mt-8 space-x-4 justify-center">
               <a href="https://www.facebook.com/BangaloreBepractical/" className="text-gray-600 hover:text-primary"><Facebook /></a>

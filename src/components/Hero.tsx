@@ -95,6 +95,7 @@ const Hero = () => {
             <input type="text" name="academyScore" placeholder="Academic Percentage" className="w-full p-3 border rounded-lg" required value={formData.academyScore} onChange={handleChange} />
             
             <select name="education" className="w-full p-3 border rounded-lg" required value={formData.education} onChange={handleChange}>
+            <option value="" selected disabled>Select Education</option>
             <option value="high_school">High School (10th)</option>
             <option value="pre_university">Pre-University (PUC/12th)</option>
             <option value="undergraduate">Undergraduate (Bachelor's Degree)</option>
