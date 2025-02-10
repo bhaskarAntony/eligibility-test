@@ -11,7 +11,10 @@ const Hero = () => {
     backlogs: "no",
     course: "",
     academyScore: "",
-    education:""
+    education:"",
+    sslc:"",
+    puc:"",
+    degree:""
   });
 
   const handleChange = (e) => {
@@ -34,7 +37,7 @@ const Hero = () => {
       if (response.ok) {
         alert("Registration Successful!");
         setLoading(false)
-        setFormData({ fullname: "", email: "", phonenumber: "", backlogs: "no", course: "", academyScore: "", education:"" });
+        setFormData({ fullname: "", email: "", phonenumber: "", backlogs: "no", course: "", academyScore: "", education:"", sslc:"", puc:"", degree:"" });
       } else {
         setLoading(false)
         alert("Error: " + result.message);
@@ -92,15 +95,17 @@ const Hero = () => {
             <input type="text" name="fullname" placeholder="Full Name" className="w-full p-3 border rounded-lg" required value={formData.fullname} onChange={handleChange} />
             <input type="email" name="email" placeholder="Email" className="w-full p-3 border rounded-lg" required value={formData.email} onChange={handleChange} />
             <input type="tel" name="phonenumber" placeholder="Phone Number" className="w-full p-3 border rounded-lg" required value={formData.phonenumber} onChange={handleChange} />
-            <input type="text" name="academyScore" placeholder="Academic Percentage" className="w-full p-3 border rounded-lg" required value={formData.academyScore} onChange={handleChange} />
+            <input type="text" name="sslc" placeholder="SSLC Percentage" className="w-full p-3 border rounded-lg" required value={formData.sslc} onChange={handleChange} />
+            <input type="text" name="puc" placeholder="PUC Percentage" className="w-full p-3 border rounded-lg" required value={formData.puc} onChange={handleChange} />
+            <input type="text" name="degree" placeholder="Degree Percentage" className="w-full p-3 border rounded-lg" required value={formData.degree} onChange={handleChange} />
             
-            <select name="education" className="w-full p-3 border rounded-lg" required value={formData.education} onChange={handleChange}>
+            {/* <select name="education" className="w-full p-3 border rounded-lg" required value={formData.education} onChange={handleChange}>
             <option value="" selected disabled>Select Education</option>
             <option value="high_school">High School (10th)</option>
             <option value="pre_university">Pre-University (PUC/12th)</option>
             <option value="undergraduate">Undergraduate (Bachelor's Degree)</option>
             <option value="others">Others</option>
-          </select>
+          </select> */}
 
 
             {/* <select name="course" className="w-full p-3 border rounded-lg" required value={formData.course} onChange={handleChange}>
