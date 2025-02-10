@@ -7,7 +7,7 @@ const Timeline = () => {
       <div className="container mx-auto max-w-7xl p-0">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Your Path to Success
+            Your Path to <span className="text-violet-500">Success</span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Follow these simple steps to unlock enhanced placement opportunities

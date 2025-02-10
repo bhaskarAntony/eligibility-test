@@ -3,11 +3,11 @@ import { CheckCircle, Users, Building, BarChart } from "lucide-react";
 
 const Outcomes = () => {
   return (
-    <section className="py-20 bg-gray-50 px-5" id="outcomes">
+    <section className="py-20 bg-violet-100 px-5" id="outcomes">
       <div className="container mx-auto max-w-7xl p-0">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Benefits & Outcomes
+            Benefits <span className="text-violet-500">&</span> Outcomes
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Discover how our eligibility test opens doors to exceptional opportunities
@@ -58,8 +58,8 @@ const Outcomes = () => {
 
         {/* Success Stories */}
         <div className="mt-16">
-          <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
-            Success Stories
+          <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Success <span className="text-violet-500">Stories</span>
           </h3>
           <div className="grid md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (

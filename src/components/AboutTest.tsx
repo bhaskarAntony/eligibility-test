@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const AboutTest = () => {
   return (
-    <section className="py-12 md:py-20 bg-white p-5" id="about">
+    <section className="py-12 md:py-20 bg-violet-700 p-5" id="about">
       <div className="container mx-auto p-0 sm:px-6 lg:px-8 max-w-7xl">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -12,10 +12,10 @@ const AboutTest = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12 md:mb-16"
         >
-          <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">
-            About the Eligibility Test
+          <h2 className="text-2xl md:text-4xl font-bold text-white mb-4">
+            About the <span className="text-violet-50">Eligibility Test</span>
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto px-4 md:px-0">
+          <p className="text-white max-w-2xl mx-auto px-4 md:px-0">
             Our comprehensive eligibility test is designed to assess your skills and connect you with leading companies for placement opportunities.
           </p>
         </motion.div>

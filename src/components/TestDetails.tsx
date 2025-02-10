@@ -4,11 +4,11 @@ import { Button } from "@/components/ui/button";
 
 const TestDetails = () => {
   return (
-    <section className="py-20 bg-gray-50 px-5" id="details">
+    <section className="py-20 bg-gray-100 px-5" id="details">
       <div className="container mx-auto max-w-7xl p-0">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Test Details
+            <span className="text-violet-500">Test</span> Details
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Mark your calendar and prepare for success with our comprehensive eligibility test

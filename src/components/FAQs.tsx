@@ -12,7 +12,7 @@ const FAQs = () => {
       <div className="container mx-auto max-w-3xl p-0">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Frequently Asked Questions
+            Frequently Asked <span className="text-violet-500">Questions</span>
           </h2>
           <p className="text-gray-600">
             Find answers to common questions about the eligibility test
@@ -24,10 +24,10 @@ const FAQs = () => {
             <AccordionItem
               key={index}
               value={`item-${index}`}
-              className="bg-white border border-gray-100 rounded-xl px-6"
+              className="bg-white border border-gray-100 rounded-xl px-6 hover:bg-violet-50"
             >
               <AccordionTrigger className="text-left hover:no-underline">
-                <span className="text-gray-900 font-semibold">{faq.question}</span>
+                <span className="text-gray-900 font-semibold hover:text-violet-500">{faq.question}</span>
               </AccordionTrigger>
               <AccordionContent className="text-gray-600">
                 {faq.answer}

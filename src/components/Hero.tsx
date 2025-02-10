@@ -47,7 +47,7 @@ const Hero = () => {
 
   return (
     <section className="relative py-5 lg:py-10 flex items-center justify-center bg-gradient-to-b from-violet-50 to-white px-5 sm:px-1 lg:px-8" id="home">
-      <div className="container p-0 mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-5 gap-12 items-center">
+      <div className="container p-0 mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-5 gap-12">
         {/* Left Content (60%) */}
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
@@ -55,7 +55,7 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="space-y-6 md:col-span-3"
         >
-          <div className="inline-flex items-center gap-2 px-0 py-2 rounded-full bg-violet-100 text-violet-700 font-medium">
+          <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-violet-100 text-violet-700 font-medium">
             <CheckCircle size={16} />
             <span className="text-sm">Registration Open for 2025</span>
           </div>
@@ -75,7 +75,7 @@ const Hero = () => {
             <li className="flex items-center gap-3 text-gray-700"><CheckCircle className="text-green-500" size={20} /> Internship opportunities with stipends</li>
           </ul>
           
-          <a href="#about" className="mt-6 px-6 py-3 bg-violet-700 hover:bg-violet-800 text-white font-semibold rounded-full flex items-center gap-2 text-center justify-center sm:w-full" style={{width:'fit-content'}}>
+          <a href="#about" className="mt-6 px-6 py-2 bg-violet-700 hover:bg-violet-800 text-white  rounded-full flex items-center gap-2 text-center justify-center sm:w-full" style={{width:'fit-content'}}>
             Learn More <ArrowRight size={20} />
           </a>
         </motion.div>
