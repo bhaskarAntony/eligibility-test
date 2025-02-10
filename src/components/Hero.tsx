@@ -10,7 +10,8 @@ const Hero = () => {
     phonenumber: "",
     backlogs: "no",
     course: "",
-    academyScore: ""
+    academyScore: "",
+    education:""
   });
 
   const handleChange = (e) => {
@@ -33,7 +34,7 @@ const Hero = () => {
       if (response.ok) {
         alert("Registration Successful!");
         setLoading(false)
-        setFormData({ fullname: "", email: "", phonenumber: "", backlogs: "no", course: "", academyScore: "" });
+        setFormData({ fullname: "", email: "", phonenumber: "", backlogs: "no", course: "", academyScore: "", education:"" });
       } else {
         setLoading(false)
         alert("Error: " + result.message);
@@ -93,6 +94,14 @@ const Hero = () => {
             <input type="tel" name="phonenumber" placeholder="Phone Number" className="w-full p-3 border rounded-lg" required value={formData.phonenumber} onChange={handleChange} />
             <input type="text" name="academyScore" placeholder="Academic Percentage" className="w-full p-3 border rounded-lg" required value={formData.academyScore} onChange={handleChange} />
             
+            <select name="education" className="w-full p-3 border rounded-lg" required value={formData.education} onChange={handleChange}>
+            <option value="high_school">High School (10th)</option>
+            <option value="pre_university">Pre-University (PUC/12th)</option>
+            <option value="undergraduate">Undergraduate (Bachelor's Degree)</option>
+            <option value="others">Others</option>
+          </select>
+
+
             <select name="course" className="w-full p-3 border rounded-lg" required value={formData.course} onChange={handleChange}>
               <option value="">Choose Course</option>
               <option value="mern">MERN Stack</option>

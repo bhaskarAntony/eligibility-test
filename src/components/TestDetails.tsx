@@ -55,7 +55,7 @@ const details = [
   {
     icon: <CalendarDays className="w-6 h-6 text-primary" />,
     title: "Date & Time",
-    items: ["February 8th, 2025", "9:00 AM - 12:00 PM", "Indian Standard Time"]
+    items: ["February 13th, 2025", "9:00 AM - 12:00 PM", "Indian Standard Time"]
   },
   {
     icon: <Monitor className="w-6 h-6 text-primary" />,
