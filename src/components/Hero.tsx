@@ -103,7 +103,7 @@ const Hero = () => {
           </select>
 
 
-            <select name="course" className="w-full p-3 border rounded-lg" required value={formData.course} onChange={handleChange}>
+            {/* <select name="course" className="w-full p-3 border rounded-lg" required value={formData.course} onChange={handleChange}>
               <option value="">Choose Course</option>
               <option value="mern">MERN Stack</option>
               <option value="java">Java Development</option>
@@ -111,7 +111,7 @@ const Hero = () => {
               <option value="cloud">Cloud Computing & DevOps</option>
               <option value="marketing">Digital Marketing</option>
               <option value="other">Other</option>
-            </select>
+            </select> */}
 
             <select name="backlogs" className="w-full p-3 border rounded-lg" required value={formData.backlogs} onChange={handleChange}>
               <option value="no">No Backlogs</option>
